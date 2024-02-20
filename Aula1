@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+	exemplo de arquivo html
+<body>
+	<?php
+	//função echo é para escrever na tela
+		echo("Olá mundo");
+	//declaração de variáveis
+		$nome = 'Laurinha'; //tipo string
+
+		$idade = 17; //tipo int
+
+		$peso = 70.7; //tipo float; usar ponto para numeros quebrados
+
+		/* status possíveis para a variável status_aula:
+			true: significa que a aula não acabou
+			false: significa que a aula acabou
+		*/
+		$status_aula = true; //variavel boolean
+		echo ("<br>nome: $nome <br>idade: $idade <br>peso: $peso kg");
+
+		/* exemplo de if:
+			o if tem três elementos:
+			1- variável a ser testada
+			2- operador de comparação (==, != - diferente de, > maior, >= maior ou igual, <, <=)
+			3- valor a ser comparado
+		*/
+		if ($status_aula == true){
+			echo ("<br>a aula <b>não</b> acabou");
+		}else{
+			echo ("<br>podem sair para o intervalo!");
+		}
+		//exemplo condição maior de idade
+		if ($idade >= 18){
+		 	echo("<br>é maior de idade");
+		}else{
+			echo("<br>é menor de idade");
+		}
+
+	?>
+</body>
+</html>
