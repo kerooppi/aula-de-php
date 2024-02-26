@@ -1,0 +1,30 @@
+<?php
+	$dia = 2;
+	$mes = 3;
+	$ano = 2024;
+
+	if ($mes == 1)
+		echo ("$dia de Janeiro de $ano");
+	else if ($mes == 2)
+		echo ("$dia de Fevereiro de $ano");
+	else if ($mes == 3)
+		echo ("$dia de Março de $ano");
+	else if ($mes == 4)
+		echo ("$dia de Abril de $ano");
+	else if ($mes == 5)
+		echo ("$dia de Maio de $ano");
+	else if ($mes == 6)
+		echo ("$dia de Junho de $ano");
+	else if ($mes == 7)
+		echo ("$dia de Julho de $ano");
+	else if ($mes == 8)
+		echo ("$dia de Agosto de $ano");
+	else if ($mes == 9)
+		echo ("$dia de Setembro de $ano");
+	else if ($mes == 10)
+		echo ("$dia de Outubro de $ano");
+	else if ($mes == 11)
+		echo ("$dia de Novembro de $ano");
+	else if ($mes == 12)
+		echo ("$dia de Dezembro $ano");
+?>
