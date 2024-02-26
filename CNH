@@ -1,0 +1,13 @@
+<?php
+	$idade = 17;
+
+	$passou_no_teste = true;
+
+	if ($idade >= 18 && $passou_no_teste == true)
+		echo ("Apto a tirar CNH");
+	else if ($idade < 18)
+		echo ("É preciso ser maior de idade");
+	else 
+		echo ("É preciso passar no teste");
+
+?>
