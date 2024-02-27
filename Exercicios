@@ -1,0 +1,94 @@
+ATIVIDADE 1 
+<?php
+	$horas = 30;
+	$valorHora = 50;
+
+		echo("O salario do funcionario é " . $horas * $valorHora);
+
+?>
+
+ATIVIDADE 2
+<?php
+ 	$altura = 1.80;
+ 	$genero = 'F';
+
+ 	if ($genero == 'M')
+ 		echo("O peso ideal dele é " . (72.7 * $altura) - 58);
+
+ 	else if($genero == 'F')
+ 		echo("O peso ideal dela é " . (62.1 * $altura) - 44.7);
+
+
+?>
+
+ATIVIDADE 3
+<?php
+	$numero1 = 35;
+	$numero2 = 9654;
+	$numero3 = 6;
+
+	if ($numero1 > $numero2 and ($numero1 > $numero3))
+		echo("O numero $numero1 é maior do que o numero $numero2 e $numero3");
+
+	if ($numero2 > $numero1 and ($numero2 > $numero3))
+		echo("O numero $numero2 é maior do que o numero $numero1 e $numero3");
+
+	if ($numero3 > $numero2 and ($numero3 > $numero1))
+		echo("O numero $numero3 é maior do que o numero $numero2 e $numero1");
+
+?>
+
+
+ATIVIDADE 4
+<?php
+
+	$nota1 = 7.5;
+	$nota2 = 8;
+	$nota3 = 8.5;
+	$total = 0;
+	$soma = 0;
+
+	if ($nota1 >= 0 && $nota1 <= 10){
+		$soma += $nota1;
+		$total++;
+	}
+
+	if ($nota2 >= 0 && $nota2 <= 10){
+		$soma += $nota2;
+		$total++;
+	}
+
+	if ($nota3 >= 0 && $nota3 <= 10){
+		$soma += $nota3;
+		$total++;
+	}
+
+	if($total > 0){
+		$media = $soma / $total;
+		echo ("A media é ". $media);
+	} else {
+		echo("Nao ha notas validas");
+	}
+	
+
+?>
+
+ATIVIDADE 5
+<?php
+	$peso = 60;
+	$altura = 1.60;
+	$imc = $peso / ($altura*$altura);
+
+	if($imc < 18.5)
+		echo("Seu IMC é $imc, sendo considerado magreza");
+	else if($imc >= 18.5 && $imc <= 24.9)
+		echo("Seu IMC é $imc, sendo considerado normal");
+	else if($imc >= 25.0 && $imc <= 29.9)
+		echo("Seu IMC é $imc, sendo considerado sobrepeso");
+	else if($imc >= 30.0 && $imc <= 39.9)
+		echo("Seu IMC é $imc, sendo considerado obesidade");
+	else if($imc >= 40.0)
+		echo("Seu IMC é $imc, sendo considerado obesidade grave");
+
+
+?>
