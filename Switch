@@ -1,0 +1,36 @@
+<?php
+	$numero1 = 10;
+	$numero2 = 20;
+	$operador = '+';
+
+	if ($operador == '+') // faz comparação
+		echo("A soma de $numero1 e $numero2 é " . $numero1 + $numero2);
+
+	else if ($operador == '-')
+		echo("A soma de $numero1 e $numero2 é " . $numero1 - $numero2);
+
+	else if ($operador == '*')
+		echo("A soma de $numero1 e $numero2 é " . $numero1 * $numero2);
+
+	else if ($operador == '/')
+		echo("A soma de $numero1 e $numero2 é " . $numero1 / $numero2);
+	
+
+	switch($operador){ // igualdade
+		case '+':
+			echo("A soma de $numero1 e $numero2 é " . $numero1 + $numero2);
+			break;
+		case '-':
+			echo("A subtração de $numero1 e $numero2 é " . $numero1 - $numero2);
+			break;
+		case '*':
+			echo("A multiplicação de $numero1 e $numero2 é " . $numero1 * $numero2);
+			break;
+		case '/':
+			echo("A divisão de $numero1 e $numero2 é " . $numero1 / $numero2);
+			break;
+		default:
+		echo("Operação não valida");
+	}
+
+?>
