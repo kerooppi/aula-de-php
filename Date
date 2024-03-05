@@ -1,0 +1,84 @@
+EXERCICIO 1 
+<?php
+	 
+	$hora = date("H");
+
+	//date_default_timezone_set("America/Sao_Paulo");
+
+	if ($hora >= 5 and($hora <= 11))
+		echo("Bom dia<br>");
+
+	else if($hora >= 12 and($hora <= 18))
+		echo("Boa tarde<br>");
+
+	else if($hora >= 19 and($hora <= 4))
+		echo("Boa noite<br>");
+
+
+	echo ("Agora são: " . date ("H:i:s") );
+
+EXERCICIO 2
+NAO TA PRONTO
+
+<?php
+
+	$dia = date("d");
+
+	date_default_timezone_set("America/Sao_Paulo");
+
+	
+	// armazenado o dia em uma variavel
+	$semana = date("D")
+	$diaN = date("d");
+	$mes = date("m");
+	$ano = date("Y");
+
+	if($mes == 1){
+	 	$mes_extenso = "JANEIRO";
+	 } else if($mes == 2){
+	 	$mes_extenso = "FEVEREIRO";
+	 } else if($mes == 3){
+	 	$mes_extenso = "MARÇO";
+	 } else if($mes == 4){
+	 	$mes_extenso = "ABRIL";
+	 } else if($mes == 5){
+	 	$mes_extenso = "MAIO";
+	 } else if($mes == 6){
+	 	$mes_extenso = "JUNHO";
+	 } else if($mes == 7){
+	 	$mes_extenso = "JULHO";
+	 } else if($mes == 8){
+	 	$mes_extenso = "AGOSTO";
+	 } else if($mes == 9){
+	 	$mes_extenso = "SETEMBRO";
+	 } else if($mes == 10){
+	 	$mes_extenso = "OUTUBRO";
+	 } else if($mes == 11){
+	 	$mes_extenso = "NOVEMBRO";
+	 } else {
+	 	echo("$dia de DEZEMBRO");
+	 }
+
+	echo ("Hoje é <br>$semana<br> dia <b>$dia</b> de <b>$mes_extenso<b> de <b>$ano<b>");
+
+ 	EXERCICIO 3
+<?php
+
+
+$estudante1 = ["João", 17, 68.9, "17/06/2006", "Estudante"];
+
+	echo("Nome: " . $estudante1[0] . "<br>");
+	echo("Idade: " . $estudante1[1] . "<br>");
+	echo("Peso: " . $estudante1[2] . "<br>");
+	echo("Nascimento: " . $estudante1[3] . "<br>");
+	echo("Ocupação: " . $estudante1[4] . "<br><br>");
+
+
+// forma 2 de criar array
+$estudante2 = array("Mateus", 18, 71.8, "28/01/2004", "Tec em INFO");
+
+	echo("Nome:   $estudante2[0]  <br>");
+	echo("Idade:   $estudante2[1]  <br>");
+	echo("Peso:   $estudante2[2]  <br>");
+	echo("Nascimento:  $estudante2[3]  <br>");
+	echo("Ocupação:   $estudante2[4]  <br");
