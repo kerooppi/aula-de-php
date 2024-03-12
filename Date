@@ -62,7 +62,7 @@ NAO TA PRONTO
 	echo ("Hoje é <br>$semana<br> dia <b>$dia</b> de <b>$mes_extenso<b> de <b>$ano<b>");
 
  	EXERCICIO 3
-forma pega da internet para mostrar o maior valor
+forma pega da internet para mostrar o maior valor (NÃO USAR)
 
 <?php
 	$valor[1] = "5";
@@ -79,7 +79,7 @@ forma pega da internet para mostrar o maior valor
 	echo max($valor);
 
 EXERCICIO 4
-forma pega da internet
+forma pega da internet (NÃO USAR)
 
 <?php
 	$frutas = ["Uva", "Melancia", "Abacaxi", "Laranja", "Ameixa"];
