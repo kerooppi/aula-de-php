@@ -62,23 +62,18 @@ NAO TA PRONTO
 	echo ("Hoje é <br>$semana<br> dia <b>$dia</b> de <b>$mes_extenso<b> de <b>$ano<b>");
 
  	EXERCICIO 3
+forma pega da internet para mostrar o maior valor
+
 <?php
+	$valor[1] = "5";
+	$valor[2] = "7";
+	$valor[3] = "134";
+	$valor[4] = "598";
+	$valor[5] = "32";
+	$valor[6] = "52";
+	$valor[7] = "22";
+	$valor[8] = "35";
+	$valor[9] = "576";
+	$valor[10] = "51";
 
-
-$estudante1 = ["João", 17, 68.9, "17/06/2006", "Estudante"];
-
-	echo("Nome: " . $estudante1[0] . "<br>");
-	echo("Idade: " . $estudante1[1] . "<br>");
-	echo("Peso: " . $estudante1[2] . "<br>");
-	echo("Nascimento: " . $estudante1[3] . "<br>");
-	echo("Ocupação: " . $estudante1[4] . "<br><br>");
-
-
-// forma 2 de criar array
-$estudante2 = array("Mateus", 18, 71.8, "28/01/2004", "Tec em INFO");
-
-	echo("Nome:   $estudante2[0]  <br>");
-	echo("Idade:   $estudante2[1]  <br>");
-	echo("Peso:   $estudante2[2]  <br>");
-	echo("Nascimento:  $estudante2[3]  <br>");
-	echo("Ocupação:   $estudante2[4]  <br");
+	echo max($valor);
