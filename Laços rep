@@ -1,0 +1,35 @@
+<?php
+	
+	for ($i=0; $i<10; $i=$i+3){
+		echo("$i ");
+	}
+
+	//laço while tem pre validaçao
+	$status = true;
+
+	$j = 0;
+	while ($status == true){
+		echo("$j ");
+
+
+		//condição de saida do laço
+		if($j == 10){
+			$status = false; //ou break;
+		}
+
+		$j++;
+	}
+
+	$encontrado = false;
+
+	$k=0; // variavel para ter a condiçao de saida
+
+	do {
+		echo("$k ");
+
+		if ($k == 10){
+			$encontrado = true;
+		}
+		$k++;
+	} while ($encontrado == false);
+?>
