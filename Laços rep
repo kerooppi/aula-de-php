@@ -65,3 +65,21 @@ EXERCICIO 2
 		else
 			echo("");
 }
+
+EXERCICIO 3
+
+<?php
+
+	$i = 30;
+
+	for ($i=2; $i<=100; $i++){
+	$primo = true;
+	for ($j=2; $j<$i; $j++){
+		if($i % $j == 0){
+			$primo = false;
+			break;
+		}
+	}
+	if ($primo == true)
+		echo("$i ");
+}
