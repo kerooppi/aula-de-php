@@ -83,3 +83,55 @@ EXERCICIO 3
 	if ($primo == true)
 		echo("$i ");
 }
+
+EXERCICIO
+<?php
+	$i = 0;
+
+		if ($i > 0)
+			echo("Positivo");
+		else if ($i < 0)
+			echo("Negativo");
+		else
+			echo("Zero");
+
+EXERCICIO
+<?php
+	$soma = 0;
+	$i = 0;
+	for($i>=1; $i<=100; $i++){
+		echo("$i<br>");
+		if($i % 2 == 0){
+			$soma+=$i;
+
+
+		}
+	}
+	echo("A soma dos numeros pares eh: $soma");
+	
+EXERCICIO
+<?php
+	$chico = 0.8;
+	$juca = 0.6;
+	$ano = 0;
+
+	while ($juca < $chico){
+		$chico = $chico + 0.06;
+		$juca = $juca + 0.09;
+		$ano = $ano + 1;
+
+	}
+
+	echo("Juca sera maior que Chico após $ano anos");
+
+EXERCICIO
+<?php
+	for($i=1; $i<=10; $i++){
+		for($j=1; $j<=$i; $j++){
+			echo("* ");
+	}
+			echo("<br>");
+	}
+
+
+EXERCICIO
