@@ -12,50 +12,56 @@
 			<legend>FORMULÁRIO</legend>
 
 			Insira seu nome:
+			<br>
 			<input type="text">
 
 			<br>
 			<br>
 			Qual sua data de nascimento? 
+			<br>
 			<input type="date">
 
 			<br>
 			<br>
 			Qual é o seu CPF?
+			<br>
 			<input type="text" placeholder="123 456 789 12">	
 
 			<br>
 			<br>
 			Qual é o seu celular?
+			<br>
 			<input type="tel" maxlength="15" placeholder="(51) 9 1234 5678">
 
 			<br>
 			<br>
 			Insira seu e-mail: 
+			<br>
 			<input type="email" placeholder="maria@gmail.com">
 
 			<br>
 			<br>
 			Qual é o seu sexo?
-			<input type="radio" name="sexo"> Feminino
-			<input type="radio" name="sexo"> Masculino
-			<input type="radio" name="sexo"> Prefiro não dizer
+			<br>
+			<input type="radio" name="sexo"> Feminino <br>
+			<input type="radio" name="sexo"> Masculino <br>
+			<input type="radio" name="sexo"> Prefiro não dizer <br>
 
 			<br>
-			<br>
 			Que horas o atendente poderá entrar em contato?
+			<br>
 			<input type="time">
 
 			<br>
 			<br>
-			Em qual dia da semana?
-			<input type="checkbox" name="dia"> Segunda
-			<input type="checkbox" name="dia"> Terça
-			<input type="checkbox" name="dia"> Quarta
-			<input type="checkbox" name="dia"> Quinta
-			<input type="checkbox" name="dia"> Sexta
+			Em qual dia da semana? <br>
+			<input type="checkbox" name="dia"> Segunda <br>
+			<input type="checkbox" name="dia"> Terça <br>
+			<input type="checkbox" name="dia"> Quarta <br>
+			<input type="checkbox" name="dia"> Quinta <br>
+			<input type="checkbox" name="dia"> Sexta <br>
 
 			<br>
-			<br>
 			Digite alguma mensagem:
+			<br>
 			<input type="textarea">
