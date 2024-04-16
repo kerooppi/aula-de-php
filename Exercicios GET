@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+</head>
+
+<body>
+	<form method="GET" action= "numero.php">
+
+		<fieldset>
+			<legend>PAR OU ÍMPAR?</legend>
+
+			Insira um número:
+			<input type="numero" name= "numero" maxlength="15">
+			<button>Enviar</button>
+
+		</fieldset>
+	</form>
+</body>
+
+<?php
+	$numero = $_GET["numero"];
+
+	if(empty($numero == true)){
+		echo("Preencha o número <br>");
+	}
+
+	if($numero % 2 == 0){
+		echo("O número que você escolheu é par");
+	} else {
+		echo("O número que você escolheu é ímpar");
+	}
+	
