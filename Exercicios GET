@@ -1,3 +1,5 @@
+EXERCICIO 1
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -32,4 +34,35 @@
 	} else {
 		echo("O número que você escolheu é ímpar");
 	}
+
+
+EXERCICIO 2 (METADE)
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
+</head>
+
+<body>
+	<form method="GET" action= "calculadorah.php">
+
+		<fieldset>
+			<legend>CALCULADORA</legend>
+
+			Número 1:
+			<input type="numero" name= "numero1">
+			<br>
+			Número 2:
+			<input type="numero" name= "numero2">
+			<br>
+			Operação:
+			
+			<br>
+			<button>Resultado</button>
+
+		</fieldset>
+	</form>
+</body>
