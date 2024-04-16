@@ -7,37 +7,38 @@
 </head>
 
 <body>
-	<form>
+	<form method="GET" action= "processa.php">
+
 		<fieldset>
 			<legend>FORMULÁRIO</legend>
 
 			Insira seu nome:
 			<br>
-			<input type="text">
+			<input type="text" name="nome">
 
 			<br>
 			<br>
 			Qual sua data de nascimento? 
 			<br>
-			<input type="date">
+			<input type="date" name="nasc">
 
 			<br>
 			<br>
 			Qual é o seu CPF?
 			<br>
-			<input type="text" placeholder="123 456 789 12">	
+			<input type="text" name= "cpf" placeholder="123 456 789 12">	
 
 			<br>
 			<br>
 			Qual é o seu celular?
 			<br>
-			<input type="tel" maxlength="15" placeholder="(51) 9 1234 5678">
+			<input type="tel" name= "celular" maxlength="15" placeholder="(51) 9 1234 5678">
 
 			<br>
 			<br>
 			Insira seu e-mail: 
 			<br>
-			<input type="email" placeholder="maria@gmail.com">
+			<input type="email" name= "email" placeholder="maria@gmail.com">
 
 			<br>
 			<br>
@@ -50,18 +51,75 @@
 			<br>
 			Que horas o atendente poderá entrar em contato?
 			<br>
-			<input type="time">
+			<input type="time" name= "horario">
 
 			<br>
 			<br>
 			Em qual dia da semana? <br>
-			<input type="checkbox" name="dia"> Segunda <br>
-			<input type="checkbox" name="dia"> Terça <br>
-			<input type="checkbox" name="dia"> Quarta <br>
-			<input type="checkbox" name="dia"> Quinta <br>
-			<input type="checkbox" name="dia"> Sexta <br>
+			<input type="checkbox" name="seg"> Segunda <br>
+			<input type="checkbox" name="ter"> Terça <br>
+			<input type="checkbox" name="qua"> Quarta <br>
+			<input type="checkbox" name="qui"> Quinta <br>
+			<input type="checkbox" name="sex"> Sexta <br>
 
 			<br>
-			Digite alguma mensagem:
-			<br>
-			<input type="textarea">
+			Envie uma mensagem: <br>
+			<textarea cols="80" rows="5" name= "mensagem" ></textarea> <br>
+			<button>Enviar</button>
+
+		</fieldset>
+	</form>
+</body>
+
+<?php
+	
+	$nome = $_GET["nome"];
+	$nascimento = $_GET["nasc"];
+	$cpf = $_GET["cpf"];
+	$celular = $_GET["celular"];
+	$email = $_GET["email"];
+	$sexo = $_GET["sexo"];
+
+	/*$seg = $_GET["seg"];
+	$ter = $_GET["ter"];
+	$qua = $_GET["qua"];
+	$qui = $_GET["qui"];
+	$sex = $_GET["sex"];*/
+
+	$mensagem = $_GET["mensagem"];
+
+	//valida as informações vindas do formulário:
+	if(empty($nome == true)){
+		echo("Preencha o nome <br>");
+	}
+	if(empty($nascimento)){
+		echo("Preencha o nascimento <br>");
+		$tem_erro = true;
+	}
+	if(empty($cpf)){
+		echo("Preencha o cpf <br>");
+		$tem_erro = true;
+	}
+	if(empty($celular)){
+		echo("Preencha o celular <br>");
+		$tem_erro = true;
+	}
+	if(empty($email)){
+		echo("Preencha o email <br>");
+		$tem_erro = true;
+	}
+	if(empty($sexo)){
+		echo("Preencha o sexo <br>");
+		$tem_erro = true;
+	}
+
+	if ("!$tem_erro" == true){
+	echo("Os dados enviados foram: <br>");
+	echo("Nome: $nome <br>");
+	echo("Nascimento: $nascimento <br>");
+	echo("CPF: $cpf <br>");
+	echo("Celular: $celular <br>");
+	echo("Email: $celular <br>");
+	echo("Sexo: $sexo <br>");
+	echo("Mensagem enviada: $mensagem <br>");
+}
