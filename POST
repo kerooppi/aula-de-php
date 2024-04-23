@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<form method="POST">
+
+		Natação <input type="checkbox" name="natacao"> <br>
+		Futebol <input type="checkbox" name="futebol"> <br>
+		Vôlei <input type="checkbox" name="volei"> <br>
+		Corrida <input type="checkbox" name="corrida"> <br>
+		Basquete <input type="checkbox" name="basquete"> <br>
+
+		<input type="submit" name="enviar" value="Enviar">
+
+	</form>
+
+	<?php
+
+	if(isset($_POST["enviar"])){
+
+		$natacao = "";
+		$futebol = "";
+		$volei = "";
+		$corrida = "";
+		$basquete = "";
+		}
+
+		if (isset($_POST["natacao"]) && !empty($_POST["natacao"])){
+			$nome = $_POST["natacao"];	
+			echo("Natação <br>");
+		}
+
+		if (isset($_POST["futebol"]) && !empty($_POST["futebol"])){
+			$nome = $_POST["futebol"];	
+			echo("Futebol <br>");
+		}
+		
+		if (isset($_POST["volei"]) && !empty($_POST["volei"])){
+			$nome = $_POST["volei"];	
+			echo("Vôlei <br>");
+		}
+		
+		if (isset($_POST["corrida"]) && !empty($_POST["corrida"])){
+			$nome = $_POST["corrida"];	
+			echo("Corrida <br>");
+		}
+
+		if (isset($_POST["basquete"]) && !empty($_POST["basquete"])){
+			$nome = $_POST["basquete"];	
+			echo("Basquete <br>");
+		}
+	?>
+</body>
+</html>
