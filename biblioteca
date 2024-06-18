@@ -1,0 +1,33 @@
+html
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Formulário de envio de mensagem</title>
+</head>
+<body>
+	<form method="POST" action="outro.php">
+		<fieldset>
+			<h1>Preencha o cadastro</h1>
+		Seu nome: <input type = "text" name = "nome">
+		Seu nascimento: <input type = "date" name = "nasc"><br><br>
+		Nome do livro: <input type = "text" name = "livro"><br>
+		Ano de publicação: <input type = "date" name = "ano"><br>
+		Gênero do livro: 
+			<input type="checkbox" name="1"> Suspense 
+			<input type="checkbox" name="2"> Terror
+			<input type="checkbox" name="3"> Comédia
+			<input type="checkbox" name="4"> Romance
+			<input type="checkbox" name="5"> Drama
+			<input type="checkbox" name="6"> Infantil <br>
+		Nome do autor: <input type = "text" name = "nome"><br>
+		Nascimento do autor: <input type = "date" name = "nasc">
+		
+		<input type = "submit" name = "enviar" value = "Enviar Cadastro">
+		<!-- fazer um código php para calcular a data de devolução de acordo com a data do cadastro -->		
+	</fieldset>
+	</form>
+</body>
+</html>
