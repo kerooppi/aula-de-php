@@ -1,0 +1,127 @@
+AUTOR PHP:
+<?php
+	
+	$chave = $_GET["chave"];
+	$nomedoautor = $_GET["nome"];
+	$nascimento = $_GET["nasc"];
+
+	if(empty($chave == true)){
+		echo("Preencha <br>");
+	}
+	
+	if(empty($nomedoautor == true)){
+		echo("Preencha o nome <br>");
+	}
+	if(empty($nascimento)){
+		echo("Preencha o nascimento <br>");
+		$tem_erro = true;
+	}
+
+	echo("Os dados enviados foram: <br>");
+	echo("Chave: $chave <br>");
+	echo("Nome do autor: $nomedoautor <br>");
+	echo("Nascimento: $nascimento <br>");
+
+MEMBRO PHP:
+<?php
+	
+	$chave = $_GET["chave"];
+	$nomem = $_GET["nomem"];
+	$nascimento = $_GET["nasci"];
+	$datac = $_GET["datac"];
+
+	if(empty($chave == true)){
+		echo("Preencha <br>");
+	}
+	
+	if(empty($nomem == true)){
+		echo("Preencha o nome <br>");
+	}
+	if(empty($nasci)){
+		echo("Preencha o nascimento <br>");
+		$tem_erro = true;
+	}
+
+	if(empty($datac)){
+		echo("Preencha a data de cadastro <br>");
+		$tem_erro = true;
+	}
+
+
+	echo("Os dados enviados foram: <br>");
+	echo("Chave: $chave <br>");
+	echo("Nome: $nomem <br>");
+	echo("Nascimento: $nasci <br>");
+	echo("data cadastro: $datac <br>");
+
+LIVRO PHP:
+<?php
+	
+	$chave = $_GET["chave"];
+	$titulo = $_GET["titulo"];
+	$autor = $_GET["autor"];
+	$anop = $_GET["anop"];
+	$genero = $_GET["genero"];
+
+
+	if(empty($chave == true)){
+		echo("Preencha <br>");
+	}
+	
+	if(empty($titulo == true)){
+		echo("Preencha o titulo <br>");
+	}
+	if(empty($autor)){
+		echo("Preencha o autor <br>");
+		$tem_erro = true;
+	}
+		
+	if(empty($anop)){
+		echo("Preencha o ano de publicação <br>");
+		$tem_erro = true;
+	}
+		
+	if(isset($_POST["enviar"])){
+		$suspense = "";
+		$terror = "";
+		$comedia = "";
+		$romance = "";
+		$drama = "";
+		$infantil = "";
+		}
+
+	if (isset($_POST["suspense"]) && !empty($_POST["suspense"])){
+			$nome = $_POST["suspense"];	
+			echo("gênero: suspense <br>");
+		}
+
+		if (isset($_POST["terror"]) && !empty($_POST["terror"])){
+			$nome = $_POST["terror"];	
+			echo("gênero: terror <br>");
+		}
+		
+		if (isset($_POST["comedia"]) && !empty($_POST["comedia"])){
+			$nome = $_POST["comedia"];	
+			echo("gênero: comédia <br>");
+		}
+		
+		if (isset($_POST["romance"]) && !empty($_POST["romance"])){
+			$nome = $_POST["romance"];	
+			echo("gênero: romance <br>");
+		}
+
+		if (isset($_POST["drama"]) && !empty($_POST["drama"])){
+			$nome = $_POST["drama"];	
+			echo("gênero: drama <br>");
+		}
+		if (isset($_POST["infantil"]) && !empty($_POST["infantil"])){
+			$nome = $_POST["infantil"];	
+			echo("gênero: infantil <br>");
+		}
+	echo("Os dados enviados foram: <br>");
+	echo("Chave: $chave <br>");
+	echo("Titulo: $titulo <br>");
+	echo("Autor: $autor <br>");
+	echo("Anop: $anop <br>");
+	echo("Genero: $genero <br>");
+
