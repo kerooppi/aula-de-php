@@ -31,3 +31,55 @@ html
 	</form>
 </body>
 </html>
+
+php
+
+<?php
+	$nome = $_POST["nome"];
+	if(empty($nome == true)){
+		echo("Preencha o nome <br>");
+	}else{
+		echo("Nome: $nome <br>");
+	}
+	
+
+	if(isset($_POST["enviar"])){
+		$suspense = "";
+		$terror = "";
+		$comedia = "";
+		$romance = "";
+		$drama = "";
+		$infantil = "";
+		}
+	if (isset($_POST["nome"]) && !empty($_POST["nome"])){
+			$nome = $_POST["nome"];	
+			echo("Nome: ($_POST[nome])");
+		}
+	if (isset($_POST["suspense"]) && !empty($_POST["suspense"])){
+			$nome = $_POST["suspense"];	
+			echo("gênero: suspense <br>");
+		}
+
+		if (isset($_POST["terror"]) && !empty($_POST["terror"])){
+			$nome = $_POST["terror"];	
+			echo("gênero: terror <br>");
+		}
+		
+		if (isset($_POST["comedia"]) && !empty($_POST["comedia"])){
+			$nome = $_POST["comedia"];	
+			echo("gênero: comédia <br>");
+		}
+		
+		if (isset($_POST["romance"]) && !empty($_POST["romance"])){
+			$nome = $_POST["romance"];	
+			echo("gênero: romance <br>");
+		}
+
+		if (isset($_POST["drama"]) && !empty($_POST["drama"])){
+			$nome = $_POST["drama"];	
+			echo("gênero: drama <br>");
+		}
+		if (isset($_POST["infantil"]) && !empty($_POST["infantil"])){
+			$nome = $_POST["infantil"];	
+			echo("gênero: infantil <br>");
+		}
