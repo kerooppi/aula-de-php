@@ -7,12 +7,12 @@ MEMBRO HTML:
 	<title>Formulário</title>
 </head>
 <body>
-	<form method="POST" action="outro.php">
+	<form method="GET" action="membro.php">
 		<fieldset>
 			<h1>Preencha o cadastro de membro</h1>
 		Chave: <input type = "number" name = "chave"><br><br>
-		Seu nome: <input type = "text" name = "nome"><br><br>
-		Seu nascimento: <input type = "date" name = "nasc"><br><br>
+		Seu nome: <input type = "text" name = "nomem"><br><br>
+		Seu nascimento: <input type = "date" name = "nasci"><br><br>
 		Data cadastro: <input type ="date" name = "datac"><br><br>
 		
 		<input type = "submit" name = "enviar" value = "Enviar Cadastro">
@@ -31,7 +31,7 @@ AUTOR HTML:
 	<title>Formulário</title>
 </head>
 <body>
-	<form method="POST" action="outro.php">
+	<form method="GET" action="autor.php">
 		<fieldset>
 			<h1>Preencha o cadastro de autor</h1>
 		Chave: <input type = "number" name = "chave"><br><br>
@@ -54,20 +54,20 @@ LIVRO HTML:
 	<title>Formulário</title>
 </head>
 <body>
-	<form method="POST" action="outro.php">
+	<form method="GET" action="livro.php">
 		<fieldset>
 			<h1>Preencha o cadastro do livro</h1>
 		Chave: <input type = "number" name = "chave"><br><br>
-		Título: <input type = "text" name = "nome"><br><br>
-		Autor: <input type = "number" name = "autor"><br><br>
-		Ano de publicação: <input type = "date" name = "nasc"><br><br>
-		Gênero:
-			<input type="checkbox" name="1"> Suspense 
-			<input type="checkbox" name="2"> Terror
-			<input type="checkbox" name="3"> Comédia
-			<input type="checkbox" name="4"> Romance
-			<input type="checkbox" name="5"> Drama
-			<input type="checkbox" name="6"> Infantil <br>
+		Título: <input type = "text" name = "titulo"><br><br>
+		Autor: <input type = "text" name = "autor"><br><br>
+		Ano de publicação: <input type = "date" name = "anop"><br><br>
+		Gênero: 
+			<input type="checkbox" name="suspense"> Suspense 
+			<input type="checkbox" name="terror"> Terror
+			<input type="checkbox" name="comedia"> Comédia
+			<input type="checkbox" name="romance"> Romance
+			<input type="checkbox" name="drama"> Drama
+			<input type="checkbox" name="infantil"> Infantil <br>
 		
 		<input type = "submit" name = "enviar" value = "Enviar Cadastro">
 		
