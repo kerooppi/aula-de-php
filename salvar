@@ -1,0 +1,169 @@
+<?php
+
+
+	if (isset($_POST["enviar"])) {
+
+		
+		$nome = ""; 
+		$nascimento = "";
+		
+
+		$tem_erro = false; 
+
+		
+		if (isset($_POST["nome"]) && !empty($_POST["nome"])){
+			$nome = $_POST["nome"];	
+		} else {
+			echo ("Preencha o nome <br>");	
+			$tem_erro = true;	
+		}
+
+
+
+		if (isset($_POST["nasc"]) && !empty($_POST["nasc"])){
+			$nascimento = $_POST["nasc"];	
+		} else {
+			echo ("Preencha o nascimento <br>");	
+			$tem_erro = true;	
+		}
+       if ($tem_erro == false) {
+			
+		$conn = mysqli_connect("10.10.3.158", "aluno", "aluno", "biblioteca");
+
+			if ($conn) {
+				 
+
+				echo	$sql = "INSERT INTO autores (nome, nascimento) VALUES ('$nome', '$nascimento')";
+
+				// executa a consulta
+				if (mysqli_query($conn, $sql) )
+					echo ("<script>alert('Mensagem enviada com sucesso!'); </script>");
+				else 
+					echo ("Houve um erro ao enviar a mensagem");
+			}
+		}
+	}	
+	
+
+
+?>
+
+
+<?php
+
+
+	if (isset($_POST["enviar"])) {
+
+		
+		$nome = ""; 
+		$anopubli = "";
+		$genero = "";
+		$idautor = "";
+		
+
+		$tem_erro = false; 
+
+		
+		if (isset($_POST["nome"]) && !empty($_POST["nome"])){
+			$nome = $_POST["nome"];	
+		} else {
+			echo ("Preencha o nome <br>");	
+			$tem_erro = true;	
+		}
+
+		if (isset($_POST["gen"]) && !empty($_POST["gen"])){
+			$genero = $_POST["gen"];	
+		} else {
+			echo ("Preencha o genero <br>");	
+			$tem_erro = true;	
+		}
+
+		if (isset($_POST["idaut"]) && !empty($_POST["idaut"])){
+			$idautor = $_POST["idaut"];	
+		} else {
+			echo ("Preencha o genero <br>");	
+			$tem_erro = true;	
+		}
+
+
+
+		if (isset($_POST["ano_pub"]) && !empty($_POST["ano_pub"])){
+			$anopubli = $_POST["ano_pub"];	
+		} else {
+			echo ("Preencha o ano de publicação <br>");	
+			$tem_erro = true;	
+		}
+       if ($tem_erro == false) {
+			
+		$conn = mysqli_connect("10.10.3.158", "aluno", "aluno", "biblioteca");
+
+			if ($conn) {
+				 
+
+				echo	$sql = "INSERT INTO livros (titulo, ano_publicacao, genero, id_autor) VALUES ('$nome', '$anopubli','$genero','$idautor')";
+
+				// executa a consulta
+				if (mysqli_query($conn, $sql) )
+					echo ("<script>alert('Mensagem enviada com sucesso!'); </script>");
+				else 
+					echo ("Houve um erro ao enviar a mensagem");
+			}
+		}
+	}	
+	
+
+
+?>
+
+
+<?php
+
+
+	if (isset($_POST["enviar"])) {
+
+		
+		$nome = ""; 
+		$nascimento = "";
+		
+
+		$tem_erro = false; 
+
+		
+		if (isset($_POST["nome"]) && !empty($_POST["nome"])){
+			$nome = $_POST["nome"];	
+		} else {
+			echo ("Preencha o nome <br>");	
+			$tem_erro = true;	
+		}
+
+
+
+		if (isset($_POST["nasc"]) && !empty($_POST["nasc"])){
+			$nascimento = $_POST["nasc"];	
+		} else {
+			echo ("Preencha o nascimento <br>");	
+			$tem_erro = true;	
+		}
+       if ($tem_erro == false) {
+			
+			$conn = mysqli_connect("10.10.3.158", "aluno", "aluno", "biblioteca");
+
+			if ($conn) {
+				$hoje = date("Y/m/d"); 
+
+				echo	$sql = "INSERT INTO membros (nome, nascimento, data_cadastro) VALUES ('$nome', '$nascimento', '$hoje')";
+
+				// executa a consulta
+				if (mysqli_query($conn, $sql) )
+					echo ("<script>alert('Mensagem enviada com sucesso!'); </script>");
+				else 
+					echo ("Houve um erro ao enviar a mensagem");
+			}
+		}
+	}	
+	
+
+
+?>
+
+
