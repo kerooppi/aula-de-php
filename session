@@ -1,0 +1,43 @@
+<?php
+	session_start();
+
+	//variaveis
+	$_SESSION["nome"] = "Monique";
+	$_SESSION["idade"] = "18";
+
+	//$nome = "Monique";
+
+	echo($_SESSION["nome"]);
+	echo($_SESSION["idade"]);
+?>
+
+<?php
+
+	//inicia sessão
+	session_start();
+
+	if(isset($_SESSION["nome"]))
+		echo($_SESSION["nome"]);
+	else
+		echo("Não foi criada a variavel de sessão <b> nome </b>");
+	//
+	if(isset($_SESSION["idade"]))
+		echo($_SESSION["idade"]);
+	else
+		echo("Não foi criada a variavel de sessão <b> idade </b>");
+	//
+	//echo ($_SESSION["nome"]);
+
+	echo ($_SESSION["idade"]);
+
+	//unset - comando para excluir variavel
+
+	unset ($_SESSION["idade"]);
+?>
+
+<?php
+	//(função)
+	session_start();
+	//encerra a sessão
+	session_destroy();
+?>
